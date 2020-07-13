@@ -23,12 +23,17 @@ body {
 pre.ascii-logo{
   font-size: 2em;
   animation: color-animation 3s infinite linear alternate;
+  margin-bottom: 0;
 }
 
-#header-anton {
+/* #header-anton {
   position: absolute;
-  top: -16px;
+  top: -12px;
 }
+
+#header-anton pre.ascii-logo {
+  font-size: 1em;
+} */
 
 /* Body Main Style */
 
@@ -36,7 +41,7 @@ pre.ascii-logo{
   font-family: 'Rock Salt', cursive;
   text-align: center;
   font-size: 4.5em;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .profile-name, #heading-team {
@@ -79,6 +84,10 @@ ul.team-list {
   align-items: center;
 }
 
+.person-text {
+  flex-basis: 600px;
+}
+
 /* Footer Styles */
 footer {
   text-align: center;
@@ -97,4 +106,10 @@ footer a:hover{
   color: rgb(255, 136, 0);
   font-weight: 800;
   font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .person {
+    flex-direction: column;
+  }
 }
